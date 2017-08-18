@@ -9,7 +9,7 @@ let win;
 
 function createWindow() {
   //create browser window
-  win = new BrowserWindow({width:330,height:510, icon:__dirname+'/img/Calculator-icon.png'});
+  win = new BrowserWindow({width:330,height:510,resizable:false, icon:__dirname+'/img/Calculator-icon.png'});
 
   //load index.html
   win.loadURL(url.format({
@@ -19,7 +19,7 @@ function createWindow() {
   }));
 
   //Open devtools
-  //win.webContents.openDevTools();
+  win.webContents.openDevTools({detach: true});
 
   win.on('closed', ()=>{
     win = null;
