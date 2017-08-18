@@ -54,5 +54,15 @@ html .equal{
 .box{
   border-style: solid;
   border-color: black;
-  padding-bottom: 100px;
+  padding-bottom: 18px;
+}
+
+#inputDisplay{
+
+  margin-left: 170px;
+  font-size: 40px;
+}
+
+.mover{
+  margin-top: 15px;
 }
