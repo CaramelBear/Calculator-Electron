@@ -1,0 +1,14 @@
+{
+  "name": "calc_electron",
+  "version": "1.0.0",
+  "description": "simple calculator app",
+  "main": "main.js",
+  "scripts": {
+    "start":"electron ."
+  },
+  "author": "Karan Joshi",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.7.5"
+  }
+}

@@ -1,0 +1,52 @@
+.buttonRow{
+  margin-top: 8px;
+}
+
+.period{
+  padding-right: 25px;
+
+  text-align: center;
+}
+
+
+.minus {
+  padding-right: 21px;
+    text-align: center;
+}
+
+.multi{
+  padding-right: 21px;
+    text-align: center;
+}
+
+.numberPad{
+  margin-top: 55px;
+}
+
+
+
+html{
+  font-size: 20px;
+}
+
+html .delete{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+html .ce{
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+
+html .plus{
+  padding-left: 20px;
+  padding-right: 15.5px;
+}
+
+html .equal{
+  margin-left: 5px;
+  padding-left: 22px;
+  padding-right: 15.5px;
+}
