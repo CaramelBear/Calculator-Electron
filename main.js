@@ -9,7 +9,7 @@ let win;
 
 function createWindow() {
   //create browser window
-  win = new BrowserWindow({width:330,height:500, icon:__dirname+'/img/Calculator-icon.png'});
+  win = new BrowserWindow({width:330,height:510, icon:__dirname+'/img/Calculator-icon.png'});
 
   //load index.html
   win.loadURL(url.format({
