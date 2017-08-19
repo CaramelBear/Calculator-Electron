@@ -4,6 +4,8 @@ var buttonList = ['oneButton','twoButton','threeButton','fourButton',
 'fiveButton','sixButton','sevenButton','eightButton','nineButton'];
 var elementList = [];
 
+console.log("Max input display length:",14);
+
 for(var i = 0; i<buttonList.length; i++){
   var element = document.getElementById(buttonList[i]);
   element.addEventListener("click",function(){
