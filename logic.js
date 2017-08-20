@@ -118,7 +118,7 @@ function calculate(num1, operation, num2){
   }else if(operation === "x"){
     result = num1 * num2;
   }else if(operation === "/"){
-    result = num1 / num2;
+    result = num2 / num1;
   }
   return result;
 }
