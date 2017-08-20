@@ -39,6 +39,15 @@ function deleteDigit(){
   }
 }
 
+var clearButton = document.getElementById('clearButton');
+clearButton.addEventListener("click", clearDigits);
+
+function clearDigits(){
+  console.log("clear button");
+  inputBox.innerText = "";
+  inputNum = "";
+}
+
 function printInput(){
   console.log(inputString);
 }
