@@ -4,6 +4,8 @@ var buttonList = ['oneButton','twoButton','threeButton','fourButton',
 'fiveButton','sixButton','sevenButton','eightButton','nineButton'];
 var elementList = [];
 
+var inputBox = document.getElementById('inputDisplay');
+
 console.log("Max input display length:",14);
 
 for(var i = 0; i<buttonList.length; i++){
@@ -17,9 +19,21 @@ for(var i = 0; i<buttonList.length; i++){
 
 
 function clickButton(element){
-  buttonNum = element.innerText
-  inputNum = inputNum+buttonNum;
+  if(inputBox.innerText.length < 10){
+    var buttonNum = element.innerText
+    inputNum = inputNum+buttonNum;
+    inputBox.innerText = inputNum;
+  }
+
   console.log("hello from button "+buttonNum);
+}
+
+var deleteButton = document.getElementById('deleteButton');
+
+deleteButton.addEventListener("click",deleteDigit);
+
+function deleteDigit(){
+  console.log("deleting digit");
 }
 
 function printInput(){
