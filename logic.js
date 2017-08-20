@@ -33,7 +33,10 @@ var deleteButton = document.getElementById('deleteButton');
 deleteButton.addEventListener("click",deleteDigit);
 
 function deleteDigit(){
-  console.log("deleting digit");
+  if(inputBox.innerText.length>0){
+    inputBox.innerText = inputBox.innerText.slice(0,-1);
+    inputNum = inputNum.slice(0,-1);
+  }
 }
 
 function printInput(){
