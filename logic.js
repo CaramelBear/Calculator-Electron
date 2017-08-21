@@ -174,3 +174,16 @@ function addDecimal(){
     inputNum = inputNum+".";
   }
 }
+
+var resetButton = document.getElementById('resetButton');
+
+resetButton.addEventListener("click",function(){
+  reset();
+});
+
+function reset(){
+  inputBox.innerText = "";
+  inputNum = "";
+  inputNum2 = "";
+  operationDisplay.innerText = "";
+}
