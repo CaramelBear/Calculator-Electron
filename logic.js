@@ -108,9 +108,31 @@ function equalAmount(){
 }
 
 function calculate(num1, operation, num2){
+  var result;
+
+
+  if(num1.includes(".")|| num2.includes(".")){
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+
+    if(operation === "+"){
+      result = (num1 + num2).toFixed(2);
+    }else if(operation === "-"){
+      result = (num2 - num1).toFixed(2);
+    }else if(operation === "x"){
+      result = (num1 * num2).toFixed(2);
+    }else if(operation === "/"){
+      result = (num2 / num1).toFixed(2);
+    }
+
+    return result;
+
+  }
+
   num1 = parseInt(num1);
   num2 = parseInt(num2);
-  var result;
+
+
   if(operation === "+"){
     result = num1 + num2;
   }else if(operation === "-"){
@@ -131,11 +153,24 @@ negativeButton.addEventListener("click",function(){
 });
 
 function negateNumber(){
-  if(inputNum != "" && inputBox.innerText.includes('-')==false){
+  if(inputNum != "" && inputBox.innerText.includes('-')==false && inputNum != "Infinity"){
     inputBox.innerText = "-"+inputBox.innerText;
     inputNum = "-"+inputNum;
   }else{
     inputBox.innerText = inputBox.innerText.substr(1);
     inputNum = inputNum.substr(1);
+  }
+}
+
+var decimalButton = document.getElementById('decimalButton');
+
+decimalButton.addEventListener("click",function(){
+  addDecimal();
+});
+
+function addDecimal(){
+  if(inputNum != "" && inputBox.innerText.includes('.')==false){
+    inputBox.innerText = inputBox.innerText+".";
+    inputNum = inputNum+".";
   }
 }
