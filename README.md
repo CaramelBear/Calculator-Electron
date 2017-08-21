@@ -4,7 +4,7 @@
 <ul>
   <li>Demonstrate knowledge of Javascript</li>
   <li>Apply knowledge of HTML DOM manipulation</li>
-  <li>Showcase knowledge of control statements & looping with Javascript</li>
+  <li>Showcase knowledge of javascript</li>
 </ul>
 
 <h4>Technologies Used:</h4>
