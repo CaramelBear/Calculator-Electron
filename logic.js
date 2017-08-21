@@ -122,3 +122,20 @@ function calculate(num1, operation, num2){
   }
   return result;
 }
+
+
+var negativeButton = document.getElementById('negativeButton');
+
+negativeButton.addEventListener("click",function(){
+  negateNumber();
+});
+
+function negateNumber(){
+  if(inputNum != "" && inputBox.innerText.includes('-')==false){
+    inputBox.innerText = "-"+inputBox.innerText;
+    inputNum = "-"+inputNum;
+  }else{
+    inputBox.innerText = inputBox.innerText.substr(1);
+    inputNum = inputNum.substr(1);
+  }
+}
