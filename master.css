@@ -59,6 +59,7 @@ html .equal{
 
 #inputDisplay{
   font-size: 35px;
+  min-height: 55px;
 }
 
 .mover{
